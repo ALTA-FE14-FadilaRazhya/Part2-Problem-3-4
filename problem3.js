@@ -1,14 +1,14 @@
 function primeNumber (number) {
     if (number <= 2) {
-        return "false";
+        return false;
     } else {
         for (let i = 2; i<=Math.sqrt(number); i++) {
             if (number % i === 0){
-              return "false";  
+              return false;  
             }
         }
+        return true;
     }
-    return "true";
 }
 
 console.log(primeNumber(11));
